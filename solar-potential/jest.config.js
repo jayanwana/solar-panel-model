@@ -15,6 +15,11 @@ module.exports = {
     /* Handle image imports
     https://jestjs.io/docs/webpack#handling-static-assets */
     '^.+\\.(jpg|jpeg|png|gif|webp|svg)$': '<rootDir>/__mocks__/fileMock.js',
+    '^@/components/(.*)$': 'solar-potential/components/$1',
+    '^@/lib/(.*)$': 'solar-potential/lib/$1',
+    '^@/middlewares/(.*)$': 'solar-potential/middlewares/$1',
+    '^@/hooks/(.*)$': 'solar-potential/hooks/$1',
+    '^@/db/(.*)$': 'solar-potential/db/$1',
   },
   testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/.next/'],
   testEnvironment: 'jsdom',
@@ -27,4 +32,5 @@ module.exports = {
     '/node_modules/',
     '^.+\\.module\\.(css|sass|scss)$',
   ],
-}
+  setupFilesAfterEnv: ['solar-potential/jest.setup.js'],
+};

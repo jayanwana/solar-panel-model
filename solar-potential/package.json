@@ -1,7 +1,7 @@
 {
   "name": "solar-potential",
   "version": "1.0.0",
-  "description": "Full fledged app made with Next.JS and MongoDB",
+  "description": "A solar panel modelling application.",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -11,14 +11,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hoangvvo/nextjs-mongodb-app.git"
+    "url": "https://github.com/jayanwana/solar-potential"
   },
-  "author": "Hoang Vo (https://hoangvvo.com)",
+  "author": "John Anwana",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hoangvvo/nextjs-mongodb-app/issues"
-  },
-  "homepage": "https://github.com/hoangvvo/nextjs-mongodb-app#readme",
   "dependencies": {
     "@sendgrid/mail": "^7.4.0",
     "bcryptjs": "^2.4.3",
