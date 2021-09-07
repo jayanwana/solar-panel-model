@@ -1,4 +1,4 @@
-const rootDir = 'C:/Users/jayan/Source/repos/solar-panel-model/solar-potential'
+const rootDir = '<rootDir>';
 
 module.exports = {
   collectCoverageFrom: [
@@ -34,5 +34,7 @@ module.exports = {
     '/node_modules/',
     '^.+\\.module\\.(css|sass|scss)$',
   ],
+  setupFiles: [`${rootDir}/next.config.js`],
   setupFilesAfterEnv: [`${rootDir}/jest.setup.js`],
+  "preset": "@shelf/jest-mongodb",
 };
