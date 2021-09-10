@@ -81,7 +81,12 @@ export class SolarPanel {
       if (time <= 12) {
         this.eSunRoof = this.roofAngle + sunAngle;
       } else {
-        this.eSunRoof = sunAngle - this.roofAngle;
+        // taking into account if the sun dips below the solar panel
+        if (this.roofAngle > sunAngle) {
+          this.eSunRoof = 0;
+        } else {
+          this.eSunRoof = sunAngle + this.roofAngle;
+        }
       }
       // this.eSunRoof = time <= 12 ? this.roofAngle + sunAngle : sunAngle - this.roofAngle;
     } else {

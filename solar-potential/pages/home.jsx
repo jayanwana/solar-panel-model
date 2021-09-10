@@ -22,6 +22,10 @@ const IndexPage = () => {
           h3 {
             color: #555;
           }
+          table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+          }
         `}
       </style>
       <div style={{ marginBottom: '2rem' }}>
@@ -31,7 +35,7 @@ const IndexPage = () => {
       </div>
       <div>
         {
-          data ? (<Results data={data.powerGenerated} />) : (<ModelInputs setData={setData} />)
+          data ? (<Results data={data.powerGenerated} clear={setData}/>) : (<ModelInputs setData={setData} />)
         }
       </div>
     </>

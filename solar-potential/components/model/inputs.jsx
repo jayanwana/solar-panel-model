@@ -88,7 +88,7 @@ export default function modelInputForm({ setData }) {
 
       <form onSubmit={hanldeSubmit} autoComplete="off">
         <label htmlFor="roofArea">
-          Area of Roof
+          Area of Roof in meters squared
           <input
             name="roofArea"
             type="number"
@@ -110,7 +110,7 @@ export default function modelInputForm({ setData }) {
           </select>
         </label>
         <label htmlFor="clientBudget">
-          Client Budget
+          Client Budget in £
           <input
             name="clientBudget"
             type="number"

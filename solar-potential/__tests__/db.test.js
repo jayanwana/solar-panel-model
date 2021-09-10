@@ -5,7 +5,7 @@ import { nanoid } from 'nanoid';
 
 next({});
 
-describe('insert', () => {
+describe('Testing the databse connection', () => {
   let connection;
   let db;
 
