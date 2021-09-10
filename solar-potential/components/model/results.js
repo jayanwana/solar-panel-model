@@ -15,6 +15,14 @@ const Results = ({ data, clear }) => {
           border: 1px solid black;
           border-collapse: collapse;
         }
+        button {
+          margin: 10;
+        }
+        .buttonContainer {
+          display: flex;
+          justify-content: center;
+          padding : 10;
+        }
       `}
     </style>
     <div style={{width: '30rem', height: '25rem'}}>
@@ -58,7 +66,6 @@ const Results = ({ data, clear }) => {
         data={ winter }
       />
     </VictoryChart>
-    <button onClick={() => clear(null)}>Return</button>
     </div>
     <div style={{marginTop: '40px'}}>
       <h4>Energy production tables</h4>
@@ -76,6 +83,9 @@ const Results = ({ data, clear }) => {
           </tr>
         ))}
       </table>
+    </div>
+    <div className={'buttonContainer'}>
+      <button onClick={() => clear(null)}>Return</button>
     </div>
     </>
   )
