@@ -55,11 +55,11 @@ export default function Layout({ children }) {
             font-family: monospace;s
             // flex: 1 1 0%;
             margin-left: 0.5rem;
-            box-shadow: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             // width: 25rem;
             color: #000;
             background-color: transparent;
-            border: 1px solid #d8d8d8;
+            border: 1px solid #000000;
             border-radius: 5px;
             outline: 0px;
             padding: 10px 25px;

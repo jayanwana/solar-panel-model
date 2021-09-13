@@ -70,11 +70,11 @@ export default function modelInputForm({ setData }) {
             font-family: monospace;s
             // flex: 1 1 0%;
             margin-left: 0.5rem;
-            box-shadow: none;
             width: 20rem;
             color: #000;
             background-color: transparent;
-            border: 1px solid #d8d8d8;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border: 1px solid #000000;
             border-radius: 5px;
             outline: 0px;
             margin: 0px 25px;

@@ -95,9 +95,7 @@ const SignupPage = () => {
 
           <button type="submit">Sign up</button>
         </form>
-        <p style={{ color: '#777', textAlign: 'center' }}>
-          By clicking submit, you are agreeing to having any data entered on this page stored by us.
-        </p>
+      
       </div>
     </>
   );
